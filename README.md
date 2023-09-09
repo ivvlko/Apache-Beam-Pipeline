@@ -37,3 +37,7 @@ A module for validating the data after parse.
 ### 5. Transformators
 
 A module for transforming data after and validation. 
+
+### 6. Exceptions
+
+A module for our own custom exceptions. We can raise them during the different stages of the pipeline, for example the validation step, throw them, log them or even raise alerts. 
