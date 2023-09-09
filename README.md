@@ -17,13 +17,13 @@ Still when you run process.py you can see a lot of stuff happening.
 
 Apache beam pipeline is defined in *process.py*, which is what we execute. It triggers the reading of the csv files, the parsing, the validation and the transformation. Once they are over we can write to Postgres. 
 
-The aforementioned processes are separated into different modules.
+The aforementioned processes are separated into different modules for readability, better maintainability, scalability and overall experience.
 
 ### 2. Utils
 Generic module for utilies. 
 - csv_utils.py:
   
-    parse_csv - currentlty the only active util we need. This map a single row values to correct columns extracted from the csv file and make sure they are the correct type.
+    parse_csv - currentlty the only active util we need. This maps a single row values to correct columns extracted from the csv file and makes sure they are the correct type.
 
 ### 3. Mappings
 A place to store the different configurations and mappings based on the csv file type. Currently we only support "partners_data" type but having it store here make the code reusable and easier to maintain.  
